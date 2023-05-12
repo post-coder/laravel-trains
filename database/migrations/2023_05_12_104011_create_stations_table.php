@@ -13,8 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('trains', function (Blueprint $table) {
-            $table->string('type', 20)->after('is_cancelled')->nullable();
+        Schema::create('stations', function (Blueprint $table) {
+            $table->id();
+            
+            $table->string('name', 50);
+
+            $table->timestamps();
         });
     }
 
@@ -25,8 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('trains', function (Blueprint $table) {
-            $table->dropColumn('type');
-        });
+        Schema::dropIfExists('stations');
     }
 };

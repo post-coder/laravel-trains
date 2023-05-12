@@ -1,1 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
+
+
+#train-table {
+
+  .cancelled {
+    opacity: .7;
+    text-decoration: line-through;
+  }
+  
+}

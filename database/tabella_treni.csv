@@ -1,0 +1,4 @@
+company,departure_station,arrival_station,is_on_time,is_cancelled
+gabrieltek,usini,roma,1,0
+grimaldilines,napoli,catania,0,1
+danilotrains,ginevra,cagliari,0,1

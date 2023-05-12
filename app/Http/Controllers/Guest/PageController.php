@@ -14,7 +14,8 @@ class PageController extends Controller
         // accedere a tutti i dati
         // salvarli in una variabile
         // dd(now());
-        $trains = Train::where('departure_time', '>=', now()->format('Y-m-d'))->get();
+        // $trains = Train::where('departure_time', '>=', now()->format('Y-m-d'))->get();
+        $trains = Train::all();
 
         // dd($trains);
 
